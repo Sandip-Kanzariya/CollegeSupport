@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+        <style>
+
+            
+nav{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: cyan;
+    color: black;    
+}
+
+            input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            }
+            input[type=text]:focus{
+                border:2px solid #555;
+            }
+
+            input[type=submit] {
+            width: 100%;
+             background-color: black;
+            color: cyan;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border-style: solid;
+            border-radius: 4px;
+            border-color: cyan;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            }
+            input[type=submit]:hover{
+                background-color:cyan;
+                color: black;
+            }
+            div{
+                border-radius:5px;
+                background-color:#f2f2f2;
+                padding:20px;
+            }
+
+            body {
+                background-color: black;
+            }
+            
+            .table {
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 6%;
+                margin-left: 10%;
+                margin-right: 10%;
+                box-shadow: 0px 0px 50px 30px cyan; 
+                border-style: solid;
+                border-color: black;
+                border-width: 5px;
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav>
+            <a href="#">
+              <img src="logo.png" style="width: 85px; height: 85px; border-radius:100%;">
+            </a>
+            <ul> 
+              <li><a href="button.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <li><a href="login.php">Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="table">
+            <form action="res.php" method="POST">
+                <label for="rank">Enter your acpc merit rank:</label>
+                <input type="text" id="rank" name="rank" placeholder="rank..">
+                <label for="branch">Enter branch:</label>
+                <input type="text" id="branch" name="branch" placeholder="branch..">
+                <label for="cast">Select your cast:</label>
+                <select id="cast" name="cast">
+                    <option value="Cutoff_Gen">General</option>
+                    <option value="Cutoff_EWS">EWS</option>
+                    <option value="Cutoff_OBC">OBC</option>
+                    <option value="Cutoff_SC">SC</option>
+                    <option value="Cutoff_ST">ST</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+body{
+    background-color: #1a1a1a;
+}
+h1{
+    color:yellow;
+    border:3px solid yellow;
+    background-color: black;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Algerian;
+    padding: 10px;
+}
+h2{
+    background-color: yellow;
+    margin-left: 640px;
+    border-radius: 20px;
+    padding: 10px;
+    border:3px solid black;
+    width:200px;
+    text-align: center;
+}
+.details{
+    border:3px solid yellow;
+    background-color: #1a1a1a;
+
+}
+.rad{
+    margin-left:690px;
+    margin-top: 15px;
+    border-radius: 100%;
+    width:8%;
+    height:10%;
+}
+.details dt{
+    font-size: 1.5rem;
+    color: yellow;
+}
+.details p{
+    font-size: 1.3rem;
+    margin-left: 0px;
+    color: white;
+}
+dd li{
+    font-size: 1.1rem;
+    list-style-type: circle;
+    color: white;
+    line-height: 1.8rem;
+    margin-left:50px;
+}
+dt::before{
+    margin:10px;
+    content:"\00BB"
+}
+.lic{
+    margin-left:640px;
+    margin-top: 15px;
+    width:230px;
+    border-radius: 20px;
+}
